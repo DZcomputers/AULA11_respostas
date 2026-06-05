@@ -38,8 +38,8 @@ arrayOfTheInput = inputThingy.split(' ');
 
 someMatrix = Array2Matrix(arrayOfTheInput, lineAmount);
 
-// Exibição hardcode:
-console.log(`${someMatrix[0][0]} ${someMatrix[0][2]} ${someMatrix[1][1]} ${someMatrix[1][2]}`);
+// Exibição hardcode - comentado fora porquê não é o que o prof quer:
+//  console.log(`${someMatrix[0][0]} ${someMatrix[0][2]} ${someMatrix[1][1]} ${someMatrix[1][2]}`);
 
 // Exibição softcode:
 /*  
@@ -52,7 +52,12 @@ console.log(`${someMatrix[0][0]} ${someMatrix[0][2]} ${someMatrix[1][1]} ${someM
 for (i = 0; i < someMatrix.length; i++) {
     for (j = 0; j < someMatrix[i].length; j++) {
         if (i == j) { // Se "i" (contador de linhas 2) for numericamente igual a "j" (contador de colunas 2)...
-            console.log(`${someMatrix[i][j]}\n${someMatrix[i][lineAmount]}`); // ...então exibe: o elemento que está na linha i, coluna j e o elemento que está na linha i, última coluna.
+            console.log(${someMatrix[i][j]}\n${someMatrix[i][lineAmount]}`); // ...então exibe: o elemento que está na linha i, coluna j e o elemento que está na linha i, última coluna.
         }
     }
 }
+
+
+// De qualquer forma...irei fazer a alteração de someMatrix[1][2] por 9 e exibirei a matriz inteira.
+someMatrix[1][2] = 9;
+console.log(someMatrix);
