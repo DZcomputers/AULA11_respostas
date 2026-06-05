@@ -25,10 +25,20 @@ function Array2Matrix (someArray, howManyLines) {
 let inputThingy;
 let arrayOfTheInput;
 let lineAmount;
+let outputMatrix;
+let i; // lineCounter do escopo global.
+let j; // columnCounter do escopo global.
 
 inputThingy = prompt('Digite seis inteiros espaçados -->  '); // Entrada esperada: "1 2 3 4 5 6"
 arrayOfTheInput = inputThingy.split(' ');
 
 lineAmount = parseInt(prompt('Quantas linhas você deseja ter? -->  ')); // Entrada esperada: "2"
 
-console.log(Array2Matrix(arrayOfTheInput, lineAmount)); // Saída esperada: [ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+outputMatrix = Array2Matrix(arrayOfTheInput, lineAmount);
+
+// Esqueci de incluir a parte onde eu exibo todos os valores com loops For. Ups!
+for (i = 0; i < outputMatrix.length; i++) {
+    for (j = 0; j < outputMatrix[i].length; j++) {
+        console.log(outputMatrix[i][j]);
+    }
+}
