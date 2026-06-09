@@ -1,4 +1,4 @@
-// AULA 10 - Exercício 10: Indexação por cores
+// AULA 10 - Exercício 10: Indexação por cores (feito e resolvido 9/6/2026)
 
 // 10.1 - Matriz por dimensões:
 function AutoMatrixUsingDimensions (lineNums, columnNums) {
